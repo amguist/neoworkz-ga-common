@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.neoworkz.common</groupId>
+    <artifactId>goldenarcher-common</artifactId>
+    <version>${revision}${sha1}${changelist}</version>
+    <packaging>pom</packaging>
+
+    <name>Neoworkz :: Golden Archer Common</name>
+    <description>
+        Common library that is containing those commonly used object utilized by
+        all products deployed within the Neoworkz environment.
+    </description>
+    <inceptionYear>2023</inceptionYear>
+    <modules>
+        <module>utilities</module>
+    </modules>
+
+    <properties>
+        <revision>1.0.0</revision>
+        <sha1/>
+        <changelist>-SNAPSHOT</changelist>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <surefireArgLine>-Xms256m -Xmx2048m -Dfile.encoding=UTF-8</surefireArgLine>
+    </properties>
+
+    <scm>
+        <connection>scm:git:https://github.com/amguist/neoworkz-ga-common.git</connection>
+        <developerConnection>scm:git:https://github.com/amguist/neoworkz-ga-common.git</developerConnection>
+        <url>https://github.com/amguist/neoworkz-ga-common</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <forkCount>1</forkCount>
+                    <reuseForks>true</reuseForks>
+                    <argLine>${surefireArgLine}</argLine>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
