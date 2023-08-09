@@ -38,6 +38,18 @@
         <tag>HEAD</tag>
     </scm>
 
+    <distributionManagement>
+        <repository>
+            <id>af-release</id>
+            <url>http://35.154.91.240:8081/artifactory/libs-release-local</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>af-snapshot</id>
+            <url>http://35.154.91.240:8081/artifactory/libs-snapshot-local</url>
+        </snapshotRepository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
