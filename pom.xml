@@ -41,12 +41,12 @@
     <distributionManagement>
         <repository>
             <id>af-release</id>
-            <url>http://35.154.91.240:8081/artifactory/libs-release-local</url>
+            <url>${env.REPOSOLNS_MVN_REPO}</url>
         </repository>
 
         <snapshotRepository>
             <id>af-snapshot</id>
-            <url>http://35.154.91.240:8081/artifactory/libs-snapshot-local</url>
+            <url>${env.REPOSOLNS_MVN_REPO}</url>
         </snapshotRepository>
     </distributionManagement>
 
