@@ -41,12 +41,12 @@
     <distributionManagement>
         <repository>
             <id>af-release</id>
-            <url>${env.REPOSOLNS_MVN_REPO}</url>
+            <url>http://localhost:8081/artifactory/neoworkz-mvn</url>
         </repository>
 
         <snapshotRepository>
             <id>af-snapshot</id>
-            <url>${env.REPOSOLNS_MVN_REPO}</url>
+            <url>http://localhost:8081/artifactory/neoworkz-mvn</url>
         </snapshotRepository>
     </distributionManagement>
 
